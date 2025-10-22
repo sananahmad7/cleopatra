@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Quicksand } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import localFont from "next/font/local";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +12,34 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-quicksand",
+});
+
+const torusPro = localFont({
+  src: [
+    {
+      path: "../public/fonts/Fontspring-DEMO-toruspro-thin.otf",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Fontspring-DEMO-toruspro-regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Fontspring-DEMO-toruspro-semibold.otf",
+      weight: "600",
+      style: "normal",
+    },
+  ],
+  variable: "--font-torus-pro",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +55,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${quicksand.variable} ${torusPro.variable} antialiased`}
       >
-        {children}
+        <div className="max-w-[1920px] mx-auto">
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   );
