@@ -1,23 +1,34 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <nav className="h-[60px] bg-white">
+    <nav className="bg-[#FFFFFF]  relative">
       <div
         className="
-          flex items-center justify-between h-full
-          px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-[300px] 3xl:px-[422px] border
+          flex items-center justify-between h-[60px]
+          px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-[300px] 3xl:px-[422px]
         "
       >
         {/* Logo */}
-        <div className="border">
-          <Image src="/logo.png" alt="logo" width={240} height={44} />
+        <div>
+          <Image
+            src="/logo.png"
+            alt="logo"
+            width={240}
+            height={44}
+            className="w-[160px] sm:w-[200px] lg:w-[240px] h-auto"
+          />
         </div>
-        {/* Buttons (hidden on mobile) */}
+
+        {/* Desktop Buttons */}
         <div
           className="
             hidden sm:flex items-center justify-between gap-4 sm:gap-6 md:gap-8
-            font-quicksand border
+            font-quicksand
           "
         >
           <button className="text-[14px] sm:text-[16px] md:text-[18px] font-semibold text-[#051923] hover:text-[#006494] transition-colors">
@@ -28,11 +39,32 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu (☰) */}
-        <button className="sm:hidden text-[#051923] text-2xl font-bold">
-          ☰
+        {/* Mobile Menu Toggle */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="sm:hidden text-[#051923] text-3xl font-bold focus:outline-none"
+        >
+          {isMenuOpen ? "✕" : "☰"}
         </button>
       </div>
+
+      {/* Mobile Dropdown Menu */}
+      {isMenuOpen && (
+        <div
+          className="
+            absolute top-[60px] left-0 w-full bg-white shadow-lg border-t
+            flex flex-col items-center py-4 gap-4
+            sm:hidden z-50
+          "
+        >
+          <button className="text-[16px] font-quicksand font-semibold text-[#051923] hover:text-[#006494] transition-colors">
+            Support
+          </button>
+          <button className="text-[16px] font-quicksand font-semibold text-[#051923] hover:text-[#006494] transition-colors">
+            Join Our Team
+          </button>
+        </div>
+      )}
     </nav>
   );
 };

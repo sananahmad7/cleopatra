@@ -57,7 +57,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${quicksand.variable} ${torusPro.variable} antialiased`}
       >
-        <div className="max-w-[1920px] mx-auto">
+        <div className="">
           <Navbar />
           {children}
         </div>
