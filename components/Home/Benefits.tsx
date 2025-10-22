@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const Benefits = () => {
   return (
-    <div className=" max-w-[998px] h-[2139px] mx-auto mt-45">
+    <div className=" max-w-[998px] h-[2139px] mx-auto mt-45 border gap-10">
       <section
-        className="
+        className=" border
           mx-auto max-w-full w-full
           flex flex-col md:flex-row items-center justify-between
           gap-8 md:gap-10 2xl:gap-14 3xl:gap-[82px]
@@ -38,10 +38,10 @@ const Benefits = () => {
           </h1>
 
           {/* Description */}
-          <div className="space-y-3 md:space-y-4">
+          <div className="space-y-3 md:space-y-4 text-[#777777]">
             <p
               className="
-                font-quicksand font-semibold text-slate-700
+                font-quicksand font-semibold 
                 text-[16px] leading-[22px]
                 md:text-[17px] md:leading-[24px]
                 2xl:text-[18px] 2xl:leading-[24px]
@@ -53,7 +53,7 @@ const Benefits = () => {
             </p>
             <p
               className="
-                font-quicksand font-semibold text-slate-700
+                font-quicksand font-semibold 
                 text-[16px] leading-[22px]
                 md:text-[17px] md:leading-[24px]
                 2xl:text-[18px] 2xl:leading-[24px]
@@ -69,7 +69,7 @@ const Benefits = () => {
             {/* How Booking Works */}
             <div
               className="
-                font-quicksand font-semibold text-slate-700
+                font-quicksand font-semibold 
                 text-[16px] leading-[22px]
                 md:text-[17px] md:leading-[24px]
                 2xl:text-[18px] 2xl:leading-[24px]
@@ -103,6 +103,85 @@ const Benefits = () => {
             className="object-contain select-none pointer-events-none"
             draggable={false}
           />
+        </div>
+      </section>
+
+      <section
+        className="
+        mx-auto w-full max-w-[988px] mt-20
+        flex flex-col md:flex-row items-center md:items-stretch justify-between
+        gap-8 md:gap-12 2xl:gap-16 3xl:gap-[82px]
+        3xl:h-[423px] border
+      "
+        aria-label="Powered by Trust"
+      >
+        {/* Left: Illustration (426 × 423 @ 3xl) */}
+        <div
+          className="
+          relative shrink-0
+          w-[280px] h-[240px]
+          md:w-[360px] md:h-[320px]
+          2xl:w-[400px] 2xl:h-[380px]
+          3xl:w-[426px] 3xl:h-[423px] 
+        "
+        >
+          {/* Replace the src with your asset path */}
+          <Image
+            src="/trust.png"
+            alt="Handshake with shield icon"
+            fill
+            priority
+            className="object-contain select-none pointer-events-none"
+            draggable={false}
+          />
+        </div>
+
+        {/* Right: Content column (fills remaining width) */}
+        <div
+          className="
+          flex flex-col justify-center
+          w-full
+          3xl:h-[423px]
+        "
+        >
+          {/* Inner box (479 × 176 @ 3xl, gap 22) */}
+          <div
+            className="
+            w-full max-w-[520px]
+            2xl:max-w-[500px]
+            3xl:w-[479px] 3xl:h-[176px]
+            flex flex-col gap-4 3xl:gap-[22px]
+          "
+          >
+            {/* Title */}
+            <h2
+              className="
+              font-torus font-bold
+              text-[34px] leading-[40px]
+              md:text-[40px] md:leading-[46px]
+              2xl:text-[48px] 2xl:leading-[54px]
+              3xl:text-[52px] 3xl:leading-[58px]
+              tracking-[0.01em] text-[#FD037E]
+            "
+            >
+              Powered by Trust
+            </h2>
+
+            {/* Description */}
+            <p
+              className="
+              font-quicksand font-semibold text-[#777777]
+              text-[16px] leading-[22px]
+              md:text-[17px] md:leading-[24px]
+              2xl:text-[18px] 2xl:leading-[24px]
+              max-w-[48ch]
+            "
+            >
+              Every CleoCrew member (what we call our cleaners) is vetted and
+              tested in-app. We run background checks and review job photos to
+              ensure every clean meets our standards.
+            </p>
+          </div>
         </div>
       </section>
     </div>
