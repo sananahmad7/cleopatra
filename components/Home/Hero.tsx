@@ -3,11 +3,11 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div className="w-full h-[700px] 3xl:h-[820px] flex items-center justify-center bg-[#FFFFFF] p-4 ">
-      <div className="w-full md:max-w-[900px] 2xl:max-w-[975px] mx-auto  h-auto md:h-[414px] flex flex-col md:flex-row items-stretch md:gap-[32px] gap-8 bg-white rounded-lg overflow-hidden border">
+      <div className="w-full md:max-w-[900px] 2xl:max-w-[975px] mx-auto  h-auto md:h-[414px] flex flex-col md:flex-row items-stretch md:gap-8 gap-8 bg-white rounded-lg overflow-hidden ">
         {/* Left side - Image */}
         <div className="w-full md:w-[400px] h-[300px] md:h-[414px] relative shrink-0">
           <Image
-            src="/CleaningLady.png"
+            src="/cleaninglady.webp"
             alt="logo"
             fill
             className="object-cover"
@@ -16,7 +16,7 @@ export default function Hero() {
 
         {/* Right side - Content */}
         <div className="w-full md:w-[420px] flex flex-col justify-center items-center md:items-start px-6 md:px-4 md:pr-6 py-8 md:py-0">
-          <h2 className="w-full md:w-[420px] md:h-[72px] font-torus font-bold text-[28px] md:text-[28px] leading-[36px] md:leading-[36px] text-center md:text-left text-[#4B4B4B] mb-8 md:mb-6">
+          <h2 className="w-full md:w-[420px] md:h-[72px] font-torus font-bold text-[28px] md:text-[28px] leading-9 md:leading-9 text-center md:text-left text-[#4B4B4B] mb-8 md:mb-6">
             The easiest, most trusted way to book your next cleaning.
           </h2>
 

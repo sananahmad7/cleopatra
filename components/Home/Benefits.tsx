@@ -96,7 +96,7 @@ const Benefits = () => {
           "
         >
           <Image
-            src="/clean-simple.png"
+            src="/clean-simple.webp"
             alt="Cleaner arriving with supplies"
             fill
             priority
@@ -127,7 +127,7 @@ const Benefits = () => {
         >
           {/* Replace the src with your asset path */}
           <Image
-            src="/trust.png"
+            src="/Trust.webp"
             alt="Handshake with shield icon"
             fill
             priority
@@ -248,7 +248,7 @@ const Benefits = () => {
         "
         >
           <Image
-            src="/RoutineEasy.png" /* put your asset in /public */
+            src="/RoutineEasy.webp" /* put your asset in /public */
             alt="Cleaner with schedule and reminders"
             fill
             priority
@@ -280,7 +280,7 @@ const Benefits = () => {
         "
         >
           <Image
-            src="/tailored.png" /* replace with your asset path */
+            src="/Tailored.webp" /* replace with your asset path */
             alt="Cleaner wiping surface"
             fill
             priority
