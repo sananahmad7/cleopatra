@@ -53,8 +53,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
+        cz-shortcut-listen="true"
         className={`${geistSans.variable} ${geistMono.variable} ${quicksand.variable} ${torusPro.variable} antialiased`}
       >
         <div className="">

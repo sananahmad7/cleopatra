@@ -100,7 +100,7 @@ export default function SlidingPanel({
   return (
     <div
       className={[
-        "relative mx-auto w-[998px] h-[56px] max-w-full overflow-hidden flex items-center xs:mt-10 lg:mt-0",
+        "relative mx-auto w-[998px] h-16 max-w-full overflow-hidden flex items-center xs:mt-10 lg:mt-0",
         "border-y border-gray-300 mask-fade",
         className,
         pauseOnHover ? "group" : "",
