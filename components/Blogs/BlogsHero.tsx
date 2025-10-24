@@ -48,7 +48,7 @@ export default function BlogsMain() {
       >
         {/* LEFT — feature post (574 × 646 @ 3xl) */}
         <Link
-          href="/blogs/quick-cleaning-hacks" // Navigate to Blog Detail page
+          href="/blogs/blogDetailPage" // Navigate to Blog Detail page
           className="group block w-full lg:w-[574px]"
         >
           {/* Image */}

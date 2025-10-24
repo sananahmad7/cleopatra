@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,13 +16,15 @@ const Navbar = () => {
       >
         {/* Logo */}
         <div>
-          <Image
-            src="/logo.png"
-            alt="logo"
-            width={240}
-            height={44}
-            className="w-[160px] sm:w-[200px] lg:w-[240px] h-auto"
-          />
+          <Link href={"/"}>
+            <Image
+              src="/logo.png"
+              alt="logo"
+              width={240}
+              height={44}
+              className="w-[160px] sm:w-[200px] lg:w-[240px] h-auto"
+            />
+          </Link>
         </div>
 
         {/* Desktop Buttons */}

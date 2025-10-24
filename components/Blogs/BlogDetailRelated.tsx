@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function MostPopular() {
+export default function BlogDetailRelated() {
   const posts = [
     {
       href: "/blogs/pro-cleaning-signs",
@@ -38,7 +38,7 @@ export default function MostPopular() {
           3xl:text-[52px] 3xl:leading-[58px]
         "
       >
-        Most Related Posts
+        Most Popular Posts
       </h2>
 
       {/* Row of two articles (gap 40 at 3xl) */}
