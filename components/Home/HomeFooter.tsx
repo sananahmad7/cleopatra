@@ -83,7 +83,7 @@ export default function HomeFooter() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:opacity-90">
+                  <Link href="/blogs" className="hover:opacity-90">
                     Our Blog
                   </Link>
                 </li>
