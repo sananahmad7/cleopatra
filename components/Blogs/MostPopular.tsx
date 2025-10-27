@@ -24,7 +24,7 @@ export default function MostPopular() {
       className="
         mx-auto w-full max-w-[988px]
         px-4 sm:px-6 lg:px-0
-        3xl:h-[577px] mt-40
+        3xl:h-[577px] mt-40 
       "
       aria-label="Most Popular Posts"
     >
@@ -100,11 +100,17 @@ export default function MostPopular() {
           className="
             inline-flex items-center justify-center
             rounded-[14px] bg-white text-[#FD037E] font-semibold
-            [border-width:1px] border-[#E7E7E7] border-b-[3px]
+            [border-width:1px] border-[#9F9F9F] border-b-[3px]
             px-8 py-3
             text-xs sm:text-sm
             shadow-[0_1px_0_rgba(0,0,0,0.06)]
             transition-transform duration-150 hover:-translate-y-px
+
+             /* sizing */
+            w-[220px] h-11
+            md:w-[260px] md:h-12
+            2xl:w-[280px]                 /* smaller on laptops */
+            3xl:w-[330px] 3xl:h-12 3xl:py-[11px] 3xl:px-[113px]
           "
         >
           VIEW ALL

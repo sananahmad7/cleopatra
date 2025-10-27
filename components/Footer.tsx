@@ -8,7 +8,7 @@ export default function Footer() {
     <footer
       className=" font-quicksand
         w-full bg-[#FD037E] text-white
-        3xl:h-[491px]
+        3xl:h-[491px] mt-40
       "
       aria-label="Site footer"
     >

@@ -167,22 +167,27 @@ const BlogDetailContent = () => {
         </p>
       </div>
 
-      {/* CTA */}
-      <div className="mt-6 flex justify-center">
+      <div className="mt-20 flex justify-center">
         <Link
-          href=""
+          href="#"
           className="
-            inline-flex items-center justify-center
-            rounded-full bg-[FD037E] text-white
-            font-semibold tracking-wide
-            text-xs sm:text-sm md:text-[13.5px] lg:text-sm 2xl:text-sm 3xl:text-sm
-            h-11 md:h-11 lg:h-12 2xl:h-[52px] 3xl:h-[52px]
-            px-6 sm:px-8 md:px-10
-            shadow-[0_1px_0_rgba(0,0,0,0.08)]
-            transition-transform duration-150 hover:-translate-y-px
-          "
+      relative inline-flex items-center justify-center
+      w-full max-w-[600px]
+      rounded-[18px] bg-white
+      border border-[#9F9F9F]              /* stays gray */
+      h-12 sm:h-12 md:h-14 3xl:h-16
+      px-6 sm:px-10
+      text-sm sm:text-base md:text-[17px] 3xl:text-[20px]
+      shadow-[0_6px_0_0_#B5B5B5]           /* bottom bar */
+      transition-transform duration-150
+      hover:-translate-y-[1px] hover:shadow-[0_7px_0_0_#B5B5B5]
+      active:translate-y-0 active:shadow-[0_3px_0_0_#B5B5B5]
+      focus-visible:outline-none focus:outline-none focus:ring-0
+    "
         >
-          BOOK YOUR NEXT CLEANING NOW
+          <span className="font-torus font-semibold uppercase tracking-wide text-[#FD037E]">
+            BOOK YOUR NEXT CLEANING NOW
+          </span>
         </Link>
       </div>
     </div>

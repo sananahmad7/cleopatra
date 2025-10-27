@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const JoinWaitlist = () => {
   return (
-    <section className=" flex  items-center  w-full h-[780px] 3xl:h-[940px] bg-[#C70163]">
+    <section className=" flex  items-center  w-full h-[780px] 3xl:h-[940px] bg-[#C70163] mt-105 md:mt-[-90] 2xl:mt-40">
       <div
         className="
         mx-auto w-full max-w-[1163px]

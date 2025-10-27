@@ -123,7 +123,7 @@ export default function AllArticles() {
           className="
             inline-flex items-center justify-center
             rounded-[10px] bg-white text-[#FD037E] font-semibold
-            [border-width:1px] border-[#E7E7E7] border-b-[3px]
+            [border-width:1px] border-[#9F9F9F] border-b-[3px]
             shadow-[0_1px_0_rgba(0,0,0,0.06)]
             transition-transform duration-150 hover:-translate-y-px
             text-xs sm:text-sm
