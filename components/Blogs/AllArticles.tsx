@@ -84,7 +84,7 @@ export default function AllArticles() {
             <div
               className="
                 relative overflow-hidden rounded-[22px]
-                h-[200px] sm:h-[220px] md:h-[230px] lg:h-60
+                h-[239px] sm:h-[340px] md:h-[230px] lg:h-60
                 2xl:h-[246px]                /* laptop-specific */
                 3xl:h-[274px]                /* leaves room for title to reach 382px */
               "

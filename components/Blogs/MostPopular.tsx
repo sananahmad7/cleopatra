@@ -21,7 +21,7 @@ export default function MostPopular() {
 
   return (
     <section
-      className="
+      className=" 
         mx-auto w-full max-w-[988px]
         px-4 sm:px-6 lg:px-0
         3xl:h-[577px] mt-40 
@@ -63,7 +63,7 @@ export default function MostPopular() {
             <div
               className="
                 relative overflow-hidden rounded-[22px]
-                h-[200px] sm:h-[230px] md:h-60 lg:h-[250px] 2xl:h-[260px]
+                h-[239px] sm:h-[340px] md:h-60 lg:h-[250px] 2xl:h-[260px]
               "
             >
               <Image

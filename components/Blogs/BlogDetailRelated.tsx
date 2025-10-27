@@ -43,7 +43,7 @@ export default function BlogDetailRelated() {
 
       {/* Row of two articles (gap 40 at 3xl) */}
       <div
-        className="
+        className=" 
           mt-6 grid grid-cols-1 md:grid-cols-2
           gap-6 md:gap-8 3xl:gap-10
           3xl:h-[422px]
@@ -63,7 +63,7 @@ export default function BlogDetailRelated() {
             <div
               className="
                 relative overflow-hidden rounded-[22px]
-                h-[200px] sm:h-[230px] md:h-60 lg:h-[250px] 2xl:h-[260px]
+                h-[200px] sm:h-[320px] md:h-[300px] lg:h-[250px] 2xl:h-[260px]
               "
             >
               <Image

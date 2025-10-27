@@ -28,19 +28,30 @@ const Sparkl = () => {
             "
           >
             {/* Title */}
+            {/* Title */}
             <h2
               className="
-                font-torus font-bold tracking-[0.01em] text-[#FD037E]
-                text-center md:text-left
-                text-[34px] leading-10
-                md:text-[40px] md:leading-[46px]
-                2xl:text-[48px] 2xl:leading-[54px]
-                3xl:text-[52px] 3xl:leading-[58px]
-              "
+        font-torus font-bold tracking-[0.01em] text-[#FD037E]
+        inline-flex items-center gap-1
+        text-center md:text-left
+        text-[34px] leading-10
+        md:text-[40px] md:leading-[46px]
+        2xl:text-[48px] 2xl:leading-[54px]
+        3xl:text-[52px] 3xl:leading-[58px]
+        whitespace-nowrap
+      "
             >
-              sparkl for business
+              {/* Sparkle icon via Next/Image (source is 250×250) */}
+              <Image
+                src="/sparkler.png" // ← put your 250px asset here
+                alt="" // decorative
+                width={250}
+                height={220}
+                priority
+                className="inline-block align-middle shrink-0 object-contain w-10 h-10 md:w-12 md:h-12 2xl:w-14 2xl:h-12 3xl:w-16 3xl:h-14"
+              />
+              <span>sparkl for business</span>
             </h2>
-
             {/* Description */}
             <p
               className="
@@ -64,7 +75,7 @@ const Sparkl = () => {
               className="
                 inline-flex items-center justify-center
                 rounded-[10px] bg-white text-[#FD037E] font-semibold
-                border border-[#E7E7E7] border-b-[3px]
+                border border-[#9F9F9F] border-b-[3px]
                 shadow-[0_1px_0_rgba(0,0,0,0.06)]
                 transition-transform duration-150 hover:-translate-y-px
                 w-60 h-11

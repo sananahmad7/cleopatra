@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const JoinWaitlist = () => {
   return (
-    <section className=" flex  items-center  w-full h-[780px] 3xl:h-[940px] bg-[#C70163] mt-105 md:mt-[-90] 2xl:mt-40">
+    <section className=" flex  items-center  w-full h-[780px] 3xl:h-[940px] bg-[#C70163] mt-115 md:mt-[-90] 2xl:mt-40">
       <div
         className="
         mx-auto w-full max-w-[1163px]
@@ -78,23 +78,23 @@ const JoinWaitlist = () => {
             </div>
 
             {/* CTA button (145 × 48, radius 10, 1/1/3/1 borders, 11/16 padding) */}
-            <div className=" pt-0.5 pb-1 px-[3px] bg-[#AFAFAF]  rounded-xl">
-              <Link
-                href="https://example.com"
-                target="_blank"
-                className="
+
+            <Link
+              href="https://example.com"
+              target="_blank"
+              className="
         inline-flex items-center justify-center
         w-[145px] h-12 rounded-[10px] 
-        transition-transform duration-150 hover:-translate-y-px
         bg-white text-[#FD037E]
         font-torus font-semibold uppercase tracking-wide
-       shadow-[0_1px_0_rgba(0,0,0,0.06)]
         px-4 py-[11px]
+         shadow-[0_1px_0_rgba(0,0,0,0.06)]
+            transition-transform duration-150 hover:-translate-y-px
+            [border-width:1px] border-[#9F9F9F] border-b-[3px]
       "
-              >
-                GET 60 FREE
-              </Link>
-            </div>
+            >
+              GET 60 FREE
+            </Link>
           </div>
         </div>
       </div>

@@ -180,7 +180,7 @@ const BlogDetailContent = () => {
       text-sm sm:text-base md:text-[17px] 3xl:text-[20px]
       shadow-[0_6px_0_0_#B5B5B5]           /* bottom bar */
       transition-transform duration-150
-      hover:-translate-y-[1px] hover:shadow-[0_7px_0_0_#B5B5B5]
+      hover:-translate-y-1px hover:shadow-[0_7px_0_0_#B5B5B5]
       active:translate-y-0 active:shadow-[0_3px_0_0_#B5B5B5]
       focus-visible:outline-none focus:outline-none focus:ring-0
     "

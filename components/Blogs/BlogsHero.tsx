@@ -50,7 +50,7 @@ export default function BlogsMain() {
           {/* Image */}
           <div
             className="relative w-full overflow-hidden rounded-3xl
-                          h-[220px] sm:h-[310px] md:h-[400px] lg:h-[370px] 2xl:h-[420px] 3xl:h-[446px]"
+                          h-[220px] sm:h-[310px] md:h-[400px] lg:h-[390px] 2xl:h-[360px] 3xl:h-[446px]"
           >
             <Image
               src={"/main.webp"} // ← put your real src string later
@@ -65,7 +65,7 @@ export default function BlogsMain() {
           {/* Heading (42/52 @ 3xl) */}
           <h1
             className="
-              mt-4 3xl:mt-6 font-torus font-semibold text-[#4B4B4B] tracking-[0.01em]
+              mt-4 lg:mt-7 3xl:mt-6 font-torus font-semibold text-[#4B4B4B] tracking-[0.01em]
               text-[26px] leading-tight
               sm:text-[30px]
               md:text-[34px]
