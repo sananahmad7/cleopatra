@@ -42,7 +42,7 @@ const Benefits = () => {
           </h1>
 
           {/* Description */}
-          <div className="space-y-3 md:space-y-4 text-[#777777] text-center md:text-left">
+          <div className="space-y-3 md:space-y-4 text-[#777777]  md:text-left ">
             <p
               className="
           font-quicksand font-semibold 
@@ -76,10 +76,12 @@ const Benefits = () => {
           font-quicksand font-semibold 
           text-[16px] leading-[22px]
           md:text-[17px] md:leading-6
-          2xl:text-[18px] 2xl:leading-6
+         
+          2xl:text-[18px] 2xl:leading-6  text-left 
         "
             >
               <p className="mb-1">How Booking Works:</p>
+
               <ol className="list-decimal pl-5 md:pl-6 space-y-1">
                 <li>Tell us about your space and cleaning needs</li>
                 <li>We’ll match you with a top-rated cleaner nearby</li>

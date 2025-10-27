@@ -4,11 +4,11 @@ import Link from "next/link";
 export default function BlogDetailHero() {
   return (
     <section
-      className="
-        w-full bg-[#C70163] text-white
-        flex items-center
+      className=" w-full
+         bg-[#C70163] text-white
+        flex items-center 
         3xl:h-[549px]
-        py-10 md:py-12 3xl:py-0
+        py-10 md:py-12 3xl:py-0 
       "
     >
       {/* Outer wrapper: centered + space-between children */}
@@ -80,8 +80,8 @@ export default function BlogDetailHero() {
         <div
           className="
             relative overflow-hidden rounded-[20px]
-            w-full h-[220px]
-            sm:h-[260px] md:h-[300px] lg:h-80
+            w-[250px] xs:w-[320px] sm:w-[500px] md:w-[520px]  lg:w-full h-[300px]
+             lg:h-80
             2xl:h-[330px]
             3xl:w-[523px] 3xl:h-[349px] 3xl:rounded-[25px]
           "

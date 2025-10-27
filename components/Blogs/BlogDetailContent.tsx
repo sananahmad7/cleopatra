@@ -5,7 +5,7 @@ const BlogDetailContent = () => {
     <div
       className="
         mx-auto w-full max-w-[988px]
-        mt-40
+        mt-10 2xl:mt-20
         h-auto 3xl:h-[1498px]
         px-4 xs:px-5 sm:px-6 md:px-8 lg:px-10 2xl:px-8
         py-6 sm:py-7 md:py-8 lg:py-10
