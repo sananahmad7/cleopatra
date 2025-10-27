@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HomeFooter() {
   return (
-    <footer className="w-full mt-35">
+    <footer className="w-full mt-[-50]">
       {/* Top wave strip */}
       <div className="relative w-full">
         <Image

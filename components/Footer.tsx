@@ -23,7 +23,7 @@ export default function Footer() {
         "
       >
         {/* LEFT: logo + socials */}
-        <div className="flex flex-col items-start gap-6 md:gap-8 3xl:pt-[80px]">
+        <div className="flex flex-col items-start gap-6 md:gap-8 3xl:pt-20">
           <Image
             src="/logosimple.png"
             alt="Cleopatra logo"
@@ -64,7 +64,7 @@ export default function Footer() {
           className="
             w-full max-w-[520px]
             2xl:max-w-[480px]
-            3xl:max-w-[460px] 3xl:h-[270px] 3xl:pt-[80px]
+            3xl:max-w-[460px] 3xl:h-[270px] 3xl:pt-20
             justify-self-center
           "
         >
@@ -98,7 +98,7 @@ export default function Footer() {
         {/* RIGHT: policy links */}
         <nav
           aria-label="Policies"
-          className="justify-self-start md:justify-self-end 3xl:pt-[80px]"
+          className="justify-self-start md:justify-self-end 3xl:pt-20"
         >
           <ul className="space-y-3 md:space-y-4 text-white/95">
             {[

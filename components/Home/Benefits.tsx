@@ -26,7 +26,7 @@ const Benefits = () => {
           {/* Title (keep 3xl sizing) */}
           <h1
             className="
-              font-torus font-bold tracking-[0.01em] text-[#EB2F96]
+              font-torus font-bold tracking-[0.01em] text-[#FD037E]
               text-[32px] leading-[38px]    /* xs default */
               md:text-[44px] md:leading-[50px]
               2xl:text-[50px] 2xl:leading-14

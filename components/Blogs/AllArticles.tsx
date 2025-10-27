@@ -51,7 +51,7 @@ export default function AllArticles() {
       <h2
         className="
           font-torus font-bold text-[#FD037E] tracking-[0.01em]
-          text-[34px] leading-[40px]
+          text-[34px] leading-10
           sm:text-[40px] sm:leading-[46px]
           md:text-[44px] md:leading-[52px]
           2xl:text-[45px] 2xl:leading-[54px]     /* tuned for laptops */
@@ -67,7 +67,7 @@ export default function AllArticles() {
           mt-6 grid grid-cols-1 md:grid-cols-2
           gap-6 md:gap-8
           2xl:gap-9                      /* 36px on laptops */
-          3xl:gap-[40px]                 /* 40px on big monitors */
+          3xl:gap-10                 /* 40px on big monitors */
           3xl:h-[804px]
         "
       >
@@ -84,7 +84,7 @@ export default function AllArticles() {
             <div
               className="
                 relative overflow-hidden rounded-[22px]
-                h-[200px] sm:h-[220px] md:h-[230px] lg:h-[240px]
+                h-[200px] sm:h-[220px] md:h-[230px] lg:h-60
                 2xl:h-[246px]                /* laptop-specific */
                 3xl:h-[274px]                /* leaves room for title to reach 382px */
               "
@@ -125,7 +125,7 @@ export default function AllArticles() {
             rounded-[10px] bg-white text-[#FD037E] font-semibold
             [border-width:1px] border-[#E7E7E7] border-b-[3px]
             shadow-[0_1px_0_rgba(0,0,0,0.06)]
-            transition-transform duration-150 hover:-translate-y-[1px]
+            transition-transform duration-150 hover:-translate-y-px
             text-xs sm:text-sm
 
             /* sizing */

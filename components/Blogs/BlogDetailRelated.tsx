@@ -32,7 +32,7 @@ export default function BlogDetailRelated() {
       <h2
         className="
           font-torus font-bold text-[#FD037E] tracking-[0.01em]
-          text-[34px] leading-[40px]
+          text-[34px] leading-10
           sm:text-[40px] sm:leading-[46px]
           md:text-[46px] md:leading-[52px]
           3xl:text-[52px] 3xl:leading-[58px]
@@ -45,7 +45,7 @@ export default function BlogDetailRelated() {
       <div
         className="
           mt-6 grid grid-cols-1 md:grid-cols-2
-          gap-6 md:gap-8 3xl:gap-[40px]
+          gap-6 md:gap-8 3xl:gap-10
           3xl:h-[422px]
         "
       >
@@ -63,7 +63,7 @@ export default function BlogDetailRelated() {
             <div
               className="
                 relative overflow-hidden rounded-[22px]
-                h-[200px] sm:h-[230px] md:h-[240px] lg:h-[250px] 2xl:h-[260px]
+                h-[200px] sm:h-[230px] md:h-60 lg:h-[250px] 2xl:h-[260px]
               "
             >
               <Image
@@ -104,7 +104,7 @@ export default function BlogDetailRelated() {
             px-8 py-3
             text-xs sm:text-sm
             shadow-[0_1px_0_rgba(0,0,0,0.06)]
-            transition-transform duration-150 hover:-translate-y-[1px]
+            transition-transform duration-150 hover:-translate-y-px
           "
         >
           VIEW ALL

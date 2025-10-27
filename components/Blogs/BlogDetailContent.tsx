@@ -179,7 +179,7 @@ const BlogDetailContent = () => {
             h-11 md:h-11 lg:h-12 2xl:h-[52px] 3xl:h-[52px]
             px-6 sm:px-8 md:px-10
             shadow-[0_1px_0_rgba(0,0,0,0.08)]
-            transition-transform duration-150 hover:-translate-y-[1px]
+            transition-transform duration-150 hover:-translate-y-px
           "
         >
           BOOK YOUR NEXT CLEANING NOW

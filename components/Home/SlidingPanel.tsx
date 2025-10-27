@@ -98,65 +98,67 @@ export default function SlidingPanel({
   const row = [...items, ...items];
 
   return (
-    <div
-      className={[
-        "relative mx-auto w-[998px] h-16 max-w-full overflow-hidden flex items-center xs:mt-10 lg:mt-0",
-        "border-y border-gray-300 mask-fade",
-        className,
-        pauseOnHover ? "group" : "",
-      ].join(" ")}
-      aria-label="Premium features ticker"
-    >
-      <ul
+    <div className="border-y border-gray-300">
+      <div
         className={[
-          // use CSS var gap so we can compensate in keyframes
-          "marquee flex items-center gap-[var(--gap)] min-w-max",
-          pauseOnHover ? "group-hover:[animation-play-state:paused]" : "",
+          "relative mx-auto w-[998px] h-16 max-w-full overflow-hidden flex items-center ",
+          " mask-fade bor",
+          className,
+          pauseOnHover ? "group" : "",
         ].join(" ")}
-        style={
-          {
-            animationDuration: `${speed}s`,
-            // Tailwind gap-6 = 1.5rem → keep your original spacing
-            ["--gap" as any]: "1.5rem",
-          } as React.CSSProperties
-        }
+        aria-label="Premium features ticker"
       >
-        {row.map((item, idx) => (
-          <li
-            key={idx}
-            className="flex shrink-0 items-center gap-3 text-base md:text-[17px] font-semibold tracking-wide text-slate-700"
-          >
-            <span className="text-pink-500">{item.icon}</span>
-            <span className="whitespace-nowrap">{item.label}</span>
-          </li>
-        ))}
-      </ul>
-
-      <style jsx>{`
-        .marquee {
-          display: flex;
-          width: max-content;
-          will-change: transform; /* smoother GPU scrolling */
-          animation: marquee linear infinite;
-        }
-
-        /* Move one full set PLUS half the inter-item gap
-           so the loop ends at the exact start of the duplicate list. */
-        @keyframes marquee {
-          0% {
-            transform: translate3d(0, 0, 0);
+        <ul
+          className={[
+            // use CSS var gap so we can compensate in keyframes
+            "marquee flex items-center gap-[var(--gap)] min-w-max  ",
+            pauseOnHover ? "group-hover:[animation-play-state:paused]" : "",
+          ].join(" ")}
+          style={
+            {
+              animationDuration: `${speed}s`,
+              // Tailwind gap-6 = 1.5rem → keep your original spacing
+              ["--gap" as any]: "1.5rem",
+            } as React.CSSProperties
           }
-          100% {
-            transform: translate3d(calc(-50% - (var(--gap) / 2)), 0, 0);
-          }
-        }
+        >
+          {row.map((item, idx) => (
+            <li
+              key={idx}
+              className="flex shrink-0 items-center gap-3 text-base md:text-[17px] font-semibold tracking-wide text-slate-700"
+            >
+              <span className="text-pink-500">{item.icon}</span>
+              <span className="whitespace-nowrap">{item.label}</span>
+            </li>
+          ))}
+        </ul>
 
-        @media (prefers-reduced-motion: reduce) {
+        <style jsx>{`
           .marquee {
-            animation: none !important;
+            display: flex;
+            width: max-content;
+            will-change: transform; /* smoother GPU scrolling */
+            animation: marquee linear infinite;
           }
-        }
-      `}</style>
+
+          /* Move one full set PLUS half the inter-item gap
+           so the loop ends at the exact start of the duplicate list. */
+          @keyframes marquee {
+            0% {
+              transform: translate3d(0, 0, 0);
+            }
+            100% {
+              transform: translate3d(calc(-50% - (var(--gap) / 2)), 0, 0);
+            }
+          }
+
+          @media (prefers-reduced-motion: reduce) {
+            .marquee {
+              animation: none !important;
+            }
+          }
+        `}</style>
+      </div>
     </div>
   );
 }

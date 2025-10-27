@@ -29,7 +29,7 @@ export default function BlogDetailHero() {
             text-white
             max-w-[560px]
             lg:max-w-[480px]
-            3xl:w-[408px] 3xl:h-[238px] 3xl:gap-[10px]
+            3xl:w-[408px] 3xl:h-[238px] 3xl:gap-2.5
           "
         >
           {/* Go back link */}
@@ -51,7 +51,7 @@ export default function BlogDetailHero() {
           <h1
             className="
               font-torus font-semibold
-              text-[28px] leading-[1.25]
+              text-[28px] leading-tight
               sm:text-[32px]
               md:text-[36px]
               2xl:text-[38px]
@@ -81,7 +81,7 @@ export default function BlogDetailHero() {
           className="
             relative overflow-hidden rounded-[20px]
             w-full h-[220px]
-            sm:h-[260px] md:h-[300px] lg:h-[320px]
+            sm:h-[260px] md:h-[300px] lg:h-80
             2xl:h-[330px]
             3xl:w-[523px] 3xl:h-[349px] 3xl:rounded-[25px]
           "

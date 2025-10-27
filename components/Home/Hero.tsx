@@ -5,7 +5,7 @@ export default function Hero() {
     <div className="w-full h-[700px] 3xl:h-[820px] flex items-center justify-center bg-[#FFFFFF] p-4 ">
       <div className="w-full md:max-w-[900px] 2xl:max-w-[975px] mx-auto  h-auto md:h-[414px] flex flex-col md:flex-row items-stretch md:gap-8 gap-8 bg-white rounded-lg overflow-hidden ">
         {/* Left side - Image */}
-        <div className="w-full md:w-[400px] h-[300px] md:h-[414px] relative shrink-0">
+        <div className="w-full sm:h-[400px] md:w-[400px] h-[300px] md:h-[414px] relative shrink-0">
           <Image
             src="/cleaninglady.webp"
             alt="logo"
@@ -15,15 +15,15 @@ export default function Hero() {
         </div>
 
         {/* Right side - Content */}
-        <div className="w-full md:w-[420px] flex flex-col justify-center items-center md:items-start px-6 md:px-4 md:pr-6 py-8 md:py-0">
-          <h2 className="w-full md:w-[420px] md:h-[72px] font-torus font-bold text-[28px] md:text-[28px] leading-9 md:leading-9 text-center md:text-left text-[#4B4B4B] mb-8 md:mb-6">
+        <div className="w-full md:w-[400px]  flex flex-col justify-center items-center md:items-start px-6 md:px-4 md:pr-6 py-8 md:py-0">
+          <h2 className="w-full md:w-[350px] lg:w-[400px]  md:h-[72px] font-torus font-bold text-[28px] md:text-[28px] leading-9 md:leading-9 text-center md:text-left text-[#4B4B4B] mb-8 md:mb-6">
             The easiest, most trusted way to book your next cleaning.
           </h2>
 
           {/* App Store Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+          <div className="flex flex-col sm:flex-row gap-4 w-full md:mt-10 lg:mt-0 md:w-auto">
             {/* App Store Button */}
-            <button className="flex items-center justify-center md:justify-start gap-3 md:gap-2 bg-white text-black px-5 py-3 md:px-4 md:py-2.5 rounded-lg border border-gray-300 hover:bg-gray-100 shadow-sm transition-colors">
+            <button className="flex items-center justify-center  md:justify-start gap-3 md:gap-2 bg-white text-black px-5 py-3 md:px-4 md:py-2.5 rounded-lg border border-gray-300 hover:bg-gray-100 shadow-sm transition-colors">
               <svg
                 className="w-8 h-8 md:w-7 md:h-7 shrink-0"
                 viewBox="0 0 24 24"

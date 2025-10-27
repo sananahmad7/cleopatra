@@ -22,7 +22,7 @@ const Navbar = () => {
               alt="logo"
               width={240}
               height={44}
-              className="w-[160px] sm:w-[200px] lg:w-[240px] h-auto"
+              className="w-40 sm:w-[200px] lg:w-60 h-auto"
             />
           </Link>
         </div>

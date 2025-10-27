@@ -59,7 +59,7 @@ const Pricing = () => {
 
               {/* Column headers */}
               <thead>
-                <tr className="bg-[#C70163] text-white">
+                <tr className="bg-[#C70163] text-white font-torus">
                   <th className="h-[58px] px-4 text-left font-semibold rounded-tl-xl">
                     Service Type / ea
                   </th>
@@ -76,7 +76,7 @@ const Pricing = () => {
               </thead>
 
               {/* Body */}
-              <tbody className="text-[#777777]">
+              <tbody className="text-[#777777] font-quicksand">
                 {rows.map(([service, standard, deep, addon], i) => (
                   <tr
                     key={service + i}
