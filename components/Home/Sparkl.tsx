@@ -175,7 +175,7 @@ const Sparkl = () => {
           text-[16px] leading-[22px]
           md:text-[17px] md:leading-6
           2xl:text-[18px] 2xl:leading-6
-          max-w-[90%] md:max-w-[60ch]
+          max-w-[90%] md:max-w-[90%]
         "
             >
               An elite cleaning standard crafted for those who expect more. Each

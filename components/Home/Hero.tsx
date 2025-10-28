@@ -16,7 +16,7 @@ export default function Hero() {
 
         {/* Right side - Content */}
         <div className=" w-full   flex flex-col justify-center  md:items-start px-6 md:px-4 md:pr-6 py-8 md:py-0">
-          <h2 className="w-full  md:max-w-[400px] lg:max-w-[500px] lg:w-[500px]  md:h-[72px] font-torus font-extrabold text-[20px] md:text-[23px] 2xl:text-[35px] leading-9 md:leading-9 text-center md:text-left text-[#4B4B4B] mb-8 md:mb-6">
+          <h2 className="w-full  md:max-w-[400px] lg:max-w-[500px] lg:w-[500px]  md:h-[72px] font-torus font-black text-[20px] md:text-[23px] 2xl:text-[35px] leading-9 md:leading-9 text-center  text-[#4B4B4B] mb-8 md:mb-6">
             The easiest, most trusted way to book your next cleaning.
           </h2>
 
@@ -46,7 +46,7 @@ export default function Hero() {
               </svg>
 
               <div className="leading-tight">
-                <div className="text-[14px] font-medium">Download on the</div>
+                <div className="text-[14px] font-bold">Download on the</div>
                 <div className="text-[16px] font-semibold">App Store</div>
               </div>
             </a>

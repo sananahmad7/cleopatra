@@ -37,6 +37,11 @@ const torusPro = localFont({
       weight: "600",
       style: "normal",
     },
+    {
+      path: "../public/fonts/Fontspring-DEMO-toruspro-bold.otf",
+      weight: "700",
+      style: "normal",
+    },
   ],
   variable: "--font-torus-pro",
   display: "swap",

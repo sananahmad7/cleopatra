@@ -60,7 +60,7 @@ const Pricing = () => {
               {/* Column headers */}
               <thead>
                 <tr className="bg-[#C70163] text-white font-torus">
-                  <th className="h-[58px] px-4 text-left font-semibold rounded-tl-xl">
+                  <th className="h-[58px] px-4 text-center font-semibold rounded-tl-xl">
                     Service Type / ea
                   </th>
                   <th className="h-[58px] px-4 text-center font-semibold border-l border-white/20">

@@ -10,8 +10,7 @@ const Navbar = () => {
     <nav className="bg-[#FFFFFF]  relative">
       <div
         className="
-          flex items-center justify-between h-[60px]
-          px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-[300px] 3xl:px-[422px]
+          flex items-center justify-between h-[60px] max-w-[975px] mx-auto
         "
       >
         {/* Logo */}
@@ -29,7 +28,7 @@ const Navbar = () => {
 
         {/* Desktop Buttons */}
         <div
-          className="
+          className=" 
             hidden sm:flex items-center justify-between gap-4 sm:gap-6 md:gap-8
             font-quicksand
           "
