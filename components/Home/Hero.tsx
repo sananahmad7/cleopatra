@@ -5,7 +5,7 @@ export default function Hero() {
     <div className="w-full h-[611px] 3xl:h-[670px] flex items-center mt-10 md:mt-0  bg-[#FFFFFF] p-4 ">
       <div className=" w-full  md:max-w-[900px] 2xl:max-w-[975px] mx-auto  h-auto  flex flex-col md:flex-row items-stretch md:gap-8 gap-8 bg-white rounded-lg overflow-hidden ">
         {/* Left side - Image */}
-        <div className="w-full sm:h-[400px] md:w-[365px] h-[300px] md:h-[380px] relative shrink-0">
+        <div className="w-full sm:h-[400px] md:w-[414px] h-[300px] md:h-[331px] relative shrink-0">
           <Image
             src="/cleaninglady.webp"
             alt="logo"
@@ -15,20 +15,20 @@ export default function Hero() {
         </div>
 
         {/* Right side - Content */}
-        <div className=" w-full   flex flex-col justify-center  md:items-start px-6 md:px-4 md:pr-6 py-8 md:py-0">
-          <h2 className="w-full  md:max-w-[400px] lg:max-w-[500px] lg:w-[500px]  md:h-[72px] font-torus font-black text-[20px] md:text-[23px] 2xl:text-[35px] leading-9 md:leading-9 text-center  text-[#4B4B4B] mb-8 md:mb-6">
+        <div className=" w-full   flex flex-col justify-center border  md:items-start px-6 md:px-4 md:pr-6 py-8 md:py-0">
+          <h2 className="w-full  md:max-w-[400px] lg:max-w-[490px] xl:max-w-[490px] border  md:h-[72px] font-torus font-black text-[23px] md:text-[25px] lg:text-[29px] 3xl:text-[35px] leading-9 md:leading-9 text-center  text-[#4B4B4B] mb-8 md:mb-6">
             The easiest, most trusted way to book your next cleaning.
           </h2>
 
           {/* App Store / Google Play badges */}
-          <div className="flex flex-col  justify-center sm:flex-row gap-4 w-full  mx-auto">
+          <div className="flex flex-col  justify-center items-center sm:flex-row gap-4 w-full  mx-auto ">
             {/* App Store */}
             <a
               href="#"
               aria-label="Download on the App Store"
               className="
       inline-flex items-center justify-center gap-2.5
-      w-[180px] h-[58px]
+      w-[200px] h-[58px]
       rounded-[10px] bg-white text-[#1E1E1E]
       px-[7px] py-2
       border border-[#E1E1E1] border-b-[3px]
@@ -57,7 +57,7 @@ export default function Hero() {
               aria-label="Get it on Google Play"
               className="
       inline-flex items-center justify-center gap-2.5
-      w-[180px] h-[58px]
+      w-[200px] h-[58px]
       rounded-[10px] bg-white text-[#1E1E1E]
       px-[7px] py-2
       border border-[#E1E1E1] border-b-[3px]

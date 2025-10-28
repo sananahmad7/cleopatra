@@ -6,7 +6,7 @@ import Link from "next/link";
 /** Simple inline SVG set — monochrome, sized for 24×24 viewBox and inheriting currentColor */
 function SocialIcon({ name }: { name: string }) {
   switch (name) {
-    case "x": // Twitter / X (monochrome "X")
+    case "x": // X (Twitter)
       return (
         <svg
           viewBox="0 0 24 24"
@@ -14,8 +14,7 @@ function SocialIcon({ name }: { name: string }) {
           className="w-[18px] h-[18px] 3xl:w-5 3xl:h-5"
           fill="currentColor"
         >
-          {/* stylized X */}
-          <path d="M2 3.25h4.1l5.01 6.68 5.32-6.68H22l-7.6 9.3 7.9 10.2h-4.18l-5.56-7.21-5.73 7.21H2l8.25-10.4L2 3.25Zm6.37 15.5 3.58-4.48 3.45 4.48H8.37Z" />
+          <path d="M18.244 2.25h3.416l-7.469 8.54L22 21.75h-6.708l-4.585-6.66-5.253 6.66H.594l7.982-8.47L2 2.25h6.708l4.292 6.277 5.244-6.277Z" />
         </svg>
       );
 
@@ -54,10 +53,9 @@ function SocialIcon({ name }: { name: string }) {
           fill="currentColor"
         >
           {/* TikTok note with tail */}
-          <path d="M14.75 3.5v8.06a4.06 4.06 0 1 1-3.07-1.2V8.48a6.35 6.35 0 1 0 6.64 6.33v-5.1a6.6 6.6 0 0 0 3.68 1.15V8.6c-1.66-.02-3.5-.74-4.76-2.03-1.2-1.23-1.49-2.38-1.49-3.07h-1Zm0 0Z" />
+          <path d="M14.75 3.25v2.08c0 1.6 1.33 3.36 3.53 3.78a7.2 7.2 0 0 0 1.97.09v2.43a7.9 7.9 0 0 1-4.6-1.52v5.4a5.75 5.75 0 1 1-5.75-5.74c.42 0 .84.05 1.24.15v2.5a2.76 2.76 0 1 0 1.99 2.65V3.25h1.62Z" />
         </svg>
       );
-
     case "instagram":
       return (
         <svg
@@ -167,10 +165,10 @@ export default function Footer() {
             w-full max-w-[520px]
             2xl:max-w-[480px]
             3xl:max-w-[460px] 3xl:h-[270px] 3xl:pt-20
-            md:justify-self-center
+            justify-self-left
           "
         >
-          <h3 className="px-4 md:px-5 text-white text-lg font-semibold mb-5">
+          <h3 className=" lg:px-5 text-white text-lg font-semibold mb-5">
             Apps
           </h3>
 
@@ -182,7 +180,7 @@ export default function Footer() {
                     href="#"
                     className="
                     flex items-center justify-between
-                    h-12 px-4 md:px-5
+                    h-12  lg:px-5
                     text-white/95 hover:bg-white/5 transition
                   "
                   >

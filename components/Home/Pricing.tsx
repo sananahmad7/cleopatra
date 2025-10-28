@@ -46,7 +46,7 @@ const Pricing = () => {
       </h2>
 
       {/* Desktop / Tablet table (md and up) */}
-      <div className="hidden md:block mt-3 w-full">
+      <div className="hidden lg:block mt-3 w-full">
         <div className="w-full h-[972px] overflow-hidden rounded-xl border border-[#DCE3EA]">
           <div className="w-full h-full ">
             <table className="min-w-[988px] w-full table-fixed border-collapse">
@@ -101,10 +101,10 @@ const Pricing = () => {
       </div>
 
       {/* Mobile list (fits >= 374px) */}
-      <div className="md:hidden mt-5">
+      <div className="lg:hidden mt-5">
         {/* Mobile header strip to mirror table headings */}
         <div className="grid grid-cols-4 gap-2 rounded-t-xl bg-[#C70163] text-white text-[12px] font-semibold px-3 py-2">
-          <div className="text-left">Service</div>
+          <div className="text-center">Service</div>
           <div className="text-center">Standard</div>
           <div className="text-center">Deep</div>
           <div className="text-center">Add-Ons</div>
@@ -122,7 +122,7 @@ const Pricing = () => {
                 text-[#777777] text-sm
               "
             >
-              <div className="text-left font-medium">{service}</div>
+              <div className="text-center font-medium">{service}</div>
               <div className="text-center">{standard}</div>
               <div className="text-center">{deep}</div>
               <div className="text-center">{addon}</div>

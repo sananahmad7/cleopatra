@@ -6,10 +6,11 @@ import SlidingPanel from "@/components/Home/SlidingPanel";
 import Sparkl from "@/components/Home/Sparkl";
 import GetStarted from "@/components/Home/GetStarted";
 import HomeFooter from "@/components/Home/HomeFooter";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <Hero />
       <SlidingPanel className="mx-auto" speed={26} />
       <Benefits />
@@ -17,7 +18,17 @@ export default function Home() {
       <Sparkl />
       <Pricing />
       <GetStarted />
-      <HomeFooter />
+
+      {/* Footer behavior */}
+      {/* Show HomeFooter only on md and up */}
+      <div className="hidden md:block">
+        <HomeFooter />
+      </div>
+
+      {/* Show Footer only on screens smaller than md */}
+      <div className="block md:hidden">
+        <Footer />
+      </div>
     </div>
   );
 }

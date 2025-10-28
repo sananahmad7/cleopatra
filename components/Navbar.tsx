@@ -20,8 +20,8 @@ const Navbar = () => {
               src="/logo.png"
               alt="logo"
               width={240}
-              height={44}
-              className=" sm:w-[200px] "
+              height={47}
+              className="w-[190px]  md:w-[220px] 3xl:w-60"
             />
           </Link>
         </div>
@@ -44,7 +44,7 @@ const Navbar = () => {
         {/* Mobile Menu Toggle */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="sm:hidden text-[#051923] text-3xl font-bold focus:outline-none"
+          className="sm:hidden text-[#051923] text-3xl font-bold focus:outline-none mr-7"
         >
           {isMenuOpen ? "✕" : "☰"}
         </button>

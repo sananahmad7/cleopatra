@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Benefits = () => {
   return (
-    <div className=" max-w-[998px] h-[2139px] mx-auto mt-45  ">
+    <div className=" max-w-[998px] h-[2139px] mx-auto mt-20 3xl:mt-28  ">
       <section
         className="
     mx-auto w-full
