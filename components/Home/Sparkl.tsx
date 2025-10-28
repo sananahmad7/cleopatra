@@ -28,30 +28,24 @@ const Sparkl = () => {
             "
           >
             {/* Title */}
-            {/* Title */}
-            <h2
-              className="
-        font-torus font-bold tracking-[0.01em] text-[#FD037E]
-        inline-flex items-center gap-1
-        text-center md:text-left
-        text-[34px] leading-10
-        md:text-[40px] md:leading-[46px]
-        2xl:text-[48px] 2xl:leading-[54px]
-        3xl:text-[52px] 3xl:leading-[58px]
-        whitespace-nowrap
-      "
-            >
-              {/* Sparkle icon via Next/Image (source is 250×250) */}
+            {/* Brand lockup (logo + text as one image) */}
+            <div className="inline-flex items-center justify-center md:justify-start">
               <Image
-                src="/sparkler.png" // ← put your 250px asset here
-                alt="" // decorative
-                width={250}
-                height={220}
+                src="/sparkllogo.webp" // ← put your combined asset here
+                alt="sparkl for business"
+                width={1200} // intrinsic file size (any large enough value)
+                height={250}
                 priority
-                className="inline-block align-middle shrink-0 object-contain w-10 h-10 md:w-12 md:h-12 2xl:w-14 2xl:h-12 3xl:w-16 3xl:h-14"
+                className="
+                    inline-block align-middle
+                    w-auto
+                    h-10 md:h-12 2xl:h-14 3xl:h-16  // ← controls visual size across breakpoints
+                    select-none pointer-events-none // crisp + non-interactive
+    "
+                sizes="(max-width:768px) 70vw, (max-width:1280px) 50vw, 479px"
               />
-              <span>sparkl for business</span>
-            </h2>
+            </div>
+
             {/* Description */}
             <p
               className="

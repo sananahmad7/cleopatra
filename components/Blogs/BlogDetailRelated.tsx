@@ -63,7 +63,7 @@ export default function BlogDetailRelated() {
             <div
               className="
                 relative overflow-hidden rounded-[22px]
-                h-[200px] sm:h-[320px] md:h-[300px] lg:h-[250px] 2xl:h-[260px]
+                h-[200px] sm:h-80 md:h-[300px] lg:h-[250px] 2xl:h-[260px]
               "
             >
               <Image

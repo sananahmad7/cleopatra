@@ -22,7 +22,7 @@ const Navbar = () => {
               alt="logo"
               width={240}
               height={44}
-              className="w-40 sm:w-[200px] lg:w-60 h-auto"
+              className=" sm:w-[200px] "
             />
           </Link>
         </div>
@@ -34,10 +34,10 @@ const Navbar = () => {
             font-quicksand
           "
         >
-          <button className="text-[14px] sm:text-[16px] md:text-[18px] font-semibold text-[#051923] hover:text-[#006494] transition-colors">
+          <button className="text-[14px] sm:text-[16px] md:text-[18px] font-bold text-[#051923] hover:text-[#006494] transition-colors">
             Support
           </button>
-          <button className="text-[14px] sm:text-[16px] md:text-[18px] font-semibold text-[#051923] hover:text-[#006494] transition-colors">
+          <button className="text-[14px] sm:text-[16px] md:text-[18px] font-bold text-[#051923] hover:text-[#006494] transition-colors">
             Join Our Team
           </button>
         </div>
@@ -60,10 +60,10 @@ const Navbar = () => {
             sm:hidden z-50
           "
         >
-          <button className="text-[16px] font-quicksand font-semibold text-[#051923] hover:text-[#006494] transition-colors">
+          <button className="text-[16px] font-quicksand font-bold text-[#051923] hover:text-[#006494] transition-colors">
             Support
           </button>
-          <button className="text-[16px] font-quicksand font-semibold text-[#051923] hover:text-[#006494] transition-colors">
+          <button className="text-[16px] font-quicksand font-bold text-[#051923] hover:text-[#006494] transition-colors">
             Join Our Team
           </button>
         </div>

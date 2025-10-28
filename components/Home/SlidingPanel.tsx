@@ -98,7 +98,7 @@ export default function SlidingPanel({
   const row = [...items, ...items];
 
   return (
-    <div className="border-y border-gray-300">
+    <div className="border-y-2 border-[#E5E5E5]">
       <div
         className={[
           "relative mx-auto w-[998px] h-16 max-w-full overflow-hidden flex items-center ",
@@ -128,7 +128,9 @@ export default function SlidingPanel({
               className="flex shrink-0 items-center gap-3 text-base md:text-[17px] font-semibold tracking-wide text-slate-700"
             >
               <span className="text-pink-500">{item.icon}</span>
-              <span className="whitespace-nowrap">{item.label}</span>
+              <span className="whitespace-nowrap text-[#777777]">
+                {item.label}
+              </span>
             </li>
           ))}
         </ul>
