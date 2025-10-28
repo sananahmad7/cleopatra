@@ -93,7 +93,7 @@ const JoinWaitlist = () => {
             [border-width:1px] border-[#9F9F9F] border-b-[3px]
       "
             >
-              GET 60 FREE
+              GET $60 FREE
             </Link>
           </div>
         </div>

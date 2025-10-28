@@ -3,25 +3,25 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div className="w-full h-[611px] 3xl:h-[670px] flex items-center mt-10 md:mt-0  bg-[#FFFFFF] p-4 ">
-      <div className="border w-full md:max-w-[900px] 2xl:max-w-[975px] mx-auto  h-auto  flex flex-col md:flex-row items-stretch md:gap-8 gap-8 bg-white rounded-lg overflow-hidden ">
+      <div className=" w-full  md:max-w-[900px] 2xl:max-w-[975px] mx-auto  h-auto  flex flex-col md:flex-row items-stretch md:gap-8 gap-8 bg-white rounded-lg overflow-hidden ">
         {/* Left side - Image */}
-        <div className="w-full sm:h-[400px] md:w-[350px] h-[300px] md:h-[380px] relative shrink-0">
+        <div className="w-full sm:h-[400px] md:w-[365px] h-[300px] md:h-[380px] relative shrink-0">
           <Image
             src="/cleaninglady.webp"
             alt="logo"
             fill
-            className="object-cover md:object-cover"
+            className="object-cover rounded-lg"
           />
         </div>
 
         {/* Right side - Content */}
-        <div className="border w-full   flex flex-col justify-center  md:items-start px-6 md:px-4 md:pr-6 py-8 md:py-0">
-          <h2 className="w-full border md:max-w-[400px] lg:max-w-[500px] lg:w-[500px]  md:h-[72px] font-torus font-extrabold text-[20px] md:text-[23px] 2xl:text-[35px] leading-9 md:leading-9 text-center md:text-left text-[#4B4B4B] mb-8 md:mb-6">
+        <div className=" w-full   flex flex-col justify-center  md:items-start px-6 md:px-4 md:pr-6 py-8 md:py-0">
+          <h2 className="w-full  md:max-w-[400px] lg:max-w-[500px] lg:w-[500px]  md:h-[72px] font-torus font-extrabold text-[20px] md:text-[23px] 2xl:text-[35px] leading-9 md:leading-9 text-center md:text-left text-[#4B4B4B] mb-8 md:mb-6">
             The easiest, most trusted way to book your next cleaning.
           </h2>
 
           {/* App Store / Google Play badges */}
-          <div className="flex flex-col sm:justify-center sm:flex-row gap-4 w-full md:w-auto mx-auto">
+          <div className="flex flex-col  justify-center sm:flex-row gap-4 w-full  mx-auto">
             {/* App Store */}
             <a
               href="#"
