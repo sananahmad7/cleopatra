@@ -82,7 +82,7 @@ const Pricing = () => {
                     key={service + i}
                     className="border-t border-[#E7EDF3] h-[53px]"
                   >
-                    <td className="px-4 text-left align-middle">{service}</td>
+                    <td className="px-4 text-center align-middle">{service}</td>
                     <td className="px-4 text-center align-middle border-l border-[#E7EDF3]">
                       {standard}
                     </td>

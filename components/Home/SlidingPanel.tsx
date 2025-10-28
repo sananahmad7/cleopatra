@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import Image from "next/image";
 
 type Feature = { label: string; icon: React.ReactNode };
 type Props = {
@@ -10,73 +11,59 @@ type Props = {
 };
 
 const pink = "currentColor";
+const PH = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="; // ← replace with real icon srcs
 
-/** inline SVGs (upsized) */
+/** inline images (32×32 to match h-8 w-8) */
 const Icons = {
   UserCheck: (
-    <svg
-      viewBox="0 0 24 24"
-      className="h-8 w-8"
-      fill="none"
-      stroke={pink}
-      strokeWidth="1.8"
-    >
-      <path d="M15 19a6 6 0 0 0-12 0" />
-      <circle cx="9" cy="7" r="4" />
-      <path d="m16 11 2 2 4-4" />
-    </svg>
+    <Image
+      src={"/cleaners.png"} // replace with "/icons/user-check.png" (example)
+      alt="Vetted Cleaners icon"
+      width={32}
+      height={32}
+      className="h-8 w-8 object-contain"
+      priority
+    />
   ),
   DollarCoin: (
-    <svg
-      viewBox="0 0 24 24"
-      className="h-8 w-8"
-      fill="none"
-      stroke={pink}
-      strokeWidth="1.8"
-    >
-      <circle cx="12" cy="12" r="9" />
-      <path d="M12 7v10M9.5 9.5c0-1.1 1.1-2 2.5-2s2.5.9 2.5 2-1.1 2-2.5 2-2.5.9-2.5 2 1.1 2 2.5 2 2.5-.9 2.5-2" />
-    </svg>
+    <Image
+      src={"/pricing.png"} // replace with "/icons/dollar-coin.png"
+      alt="Transparent Pricing icon"
+      width={32}
+      height={32}
+      className="h-8 w-8 object-contain"
+      priority
+    />
   ),
   Calendar: (
-    <svg
-      viewBox="0 0 24 24"
-      className="h-8 w-8"
-      fill="none"
-      stroke={pink}
-      strokeWidth="1.8"
-    >
-      <rect x="3" y="4" width="18" height="18" rx="2" />
-      <path d="M16 2v4M8 2v4M3 10h18" />
-      <path d="m9 15 2 2 4-4" />
-    </svg>
+    <Image
+      src={"/fast.png"} // replace with "/icons/calendar-check.png"
+      alt="Fast Booking icon"
+      width={32}
+      height={32}
+      className="h-8 w-8 object-contain"
+      priority
+    />
   ),
   Diamond: (
-    <svg
-      viewBox="0 0 24 24"
-      className="h-8 w-8"
-      fill="none"
-      stroke={pink}
-      strokeWidth="1.8"
-    >
-      <path d="M6 3h12l4 6-10 12L2 9z" />
-      <path d="M6 3l6 18L18 3M2 9h20" />
-    </svg>
+    <Image
+      src={"/premium.png"} // replace with "/icons/diamond.png"
+      alt="Premium Service icon"
+      width={32}
+      height={32}
+      className="h-8 w-8 object-contain"
+      priority
+    />
   ),
   Clock247: (
-    <svg
-      viewBox="0 0 24 24"
-      className="h-8 w-8"
-      fill="none"
-      stroke={pink}
-      strokeWidth="1.8"
-    >
-      <circle cx="12" cy="12" r="9" />
-      <path d="M12 7v5l3 2" />
-      <text x="12" y="20" textAnchor="middle" fontSize="6" fill={pink}>
-        24/7
-      </text>
-    </svg>
+    <Image
+      src={"/support.png"} // replace with "/icons/clock-247.png"
+      alt="24/7 Support icon"
+      width={34}
+      height={34}
+      className="h-8 w-8 object-contain"
+      priority
+    />
   ),
 };
 
@@ -98,11 +85,11 @@ export default function SlidingPanel({
   const row = [...items, ...items];
 
   return (
-    <div className="border-y-2 border-[#E5E5E5]">
+    <div className="border-y-2 border-[#E5E5E5] mt-20 md:mt-0">
       <div
         className={[
           "relative mx-auto w-[998px] h-16 max-w-full overflow-hidden flex items-center ",
-          " mask-fade bor",
+          " mask-fade ",
           className,
           pauseOnHover ? "group" : "",
         ].join(" ")}
@@ -110,14 +97,12 @@ export default function SlidingPanel({
       >
         <ul
           className={[
-            // use CSS var gap so we can compensate in keyframes
             "marquee flex items-center gap-[var(--gap)] min-w-max  ",
             pauseOnHover ? "group-hover:[animation-play-state:paused]" : "",
           ].join(" ")}
           style={
             {
               animationDuration: `${speed}s`,
-              // Tailwind gap-6 = 1.5rem → keep your original spacing
               ["--gap" as any]: "1.5rem",
             } as React.CSSProperties
           }
@@ -127,6 +112,7 @@ export default function SlidingPanel({
               key={idx}
               className="flex shrink-0 items-center gap-3 text-base md:text-[17px] font-semibold tracking-wide text-slate-700"
             >
+              {/* color class left intact; will not affect images */}
               <span className="text-pink-500">{item.icon}</span>
               <span className="whitespace-nowrap text-[#777777]">
                 {item.label}
@@ -139,12 +125,9 @@ export default function SlidingPanel({
           .marquee {
             display: flex;
             width: max-content;
-            will-change: transform; /* smoother GPU scrolling */
+            will-change: transform;
             animation: marquee linear infinite;
           }
-
-          /* Move one full set PLUS half the inter-item gap
-           so the loop ends at the exact start of the duplicate list. */
           @keyframes marquee {
             0% {
               transform: translate3d(0, 0, 0);
@@ -153,7 +136,6 @@ export default function SlidingPanel({
               transform: translate3d(calc(-50% - (var(--gap) / 2)), 0, 0);
             }
           }
-
           @media (prefers-reduced-motion: reduce) {
             .marquee {
               animation: none !important;

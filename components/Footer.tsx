@@ -118,7 +118,7 @@ export default function Footer() {
         className="
           mx-auto w-full max-w-[1920px]
           px-6 sm:px-8 lg:px-10
-          py-10 md:py-14 3xl:py-0
+          py-10 md:py-14 3xl:pb-10
           grid gap-10 md:gap-12
           md:grid-cols-3 items-start
         "
@@ -200,7 +200,7 @@ export default function Footer() {
         {/* RIGHT: policy links */}
         <nav
           aria-label="Policies"
-          className="justify-self-start md:justify-self-end 3xl:pt-20"
+          className="justify-self-start md:justify-self-center 3xl:pt-20"
         >
           <ul className="space-y-3 md:space-y-4 text-white/95">
             {[

@@ -4,10 +4,10 @@ export default function GetStarted() {
   return (
     <section
       className="
-        max-w-[530px] w-full mx-auto
+        max-w-[530px] w-full mx-auto 
         h-auto 3xl:h-[260px]
         flex flex-col items-center justify-center
-        mt-[140px] px-4      
+        mt-15 md:mt-20 lg:mt-30 2xl:mt-40 px-4      
         space-y-6 sm:space-y-8 3xl:space-y-10
       "
       aria-label="Book a Cleaning with Sparkl"
