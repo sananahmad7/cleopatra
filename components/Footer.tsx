@@ -26,7 +26,6 @@ function SocialIcon({ name }: { name: string }) {
           className="w-[18px] h-[18px] 3xl:w-5 3xl:h-5"
           fill="currentColor"
         >
-          {/* LI round-corner tile + "in" monogram */}
           <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5.001ZM3.5 9.25h2.96V21H3.5V9.25ZM9.25 9.25h2.84v1.6h.04c.4-.76 1.39-1.84 3.22-1.84 2.44 0 4.28 1.6 4.28 5.05V21h-2.98v-6.16c0-1.5-.54-2.53-1.88-2.53-1.03 0-1.64.69-1.91 1.36-.1.24-.13.57-.13.9V21H9.25V9.25Z" />
         </svg>
       );
@@ -39,7 +38,6 @@ function SocialIcon({ name }: { name: string }) {
           className="w-[18px] h-[18px] 3xl:w-5 3xl:h-5"
           fill="currentColor"
         >
-          {/* YT rounded rectangle + play triangle */}
           <path d="M23 12c0-2.22-.2-3.71-.52-4.63a3.13 3.13 0 0 0-1.86-1.86C19.7 5.2 12 5.2 12 5.2s-7.7 0-8.62.31A3.13 3.13 0 0 0 1.52 7.37C1.2 8.29 1 9.78 1 12s.2 3.71.52 4.63c.34.98 1.09 1.74 2.06 2.06.92.31 8.42.31 8.42.31s7.7 0 8.62-.31a3.13 3.13 0 0 0 2.06-2.06c.32-.92.52-2.41.52-4.63ZM9.75 8.9l6.14 3.1-6.14 3.1V8.9Z" />
         </svg>
       );
@@ -52,10 +50,10 @@ function SocialIcon({ name }: { name: string }) {
           className="w-[18px] h-[18px] 3xl:w-5 3xl:h-5"
           fill="currentColor"
         >
-          {/* TikTok note with tail */}
           <path d="M14.75 3.25v2.08c0 1.6 1.33 3.36 3.53 3.78a7.2 7.2 0 0 0 1.97.09v2.43a7.9 7.9 0 0 1-4.6-1.52v5.4a5.75 5.75 0 1 1-5.75-5.74c.42 0 .84.05 1.24.15v2.5a2.76 2.76 0 1 0 1.99 2.65V3.25h1.62Z" />
         </svg>
       );
+
     case "instagram":
       return (
         <svg
@@ -69,11 +67,8 @@ function SocialIcon({ name }: { name: string }) {
           strokeLinejoin="round"
           shapeRendering="geometricPrecision"
         >
-          {/* outer rounded square */}
           <rect x="3.75" y="3.75" width="16.5" height="16.5" rx="4.5" />
-          {/* lens */}
           <circle cx="12" cy="12" r="3.6" />
-          {/* flash dot (filled) */}
           <circle
             cx="16.3"
             cy="7.7"
@@ -92,7 +87,6 @@ function SocialIcon({ name }: { name: string }) {
           className="w-[18px] h-[18px] 3xl:w-5 3xl:h-5"
           fill="currentColor"
         >
-          {/* Fb 'f' */}
           <path d="M13.5 21v-7.25h2.43l.37-2.98H13.5V8.85c0-.86.24-1.45 1.49-1.45h1.59V4.75c-.79-.1-1.59-.15-2.39-.15-2.37 0-4 1.45-4 4.11v2.06H7.5v2.98h2.69V21h3.31Z" />
         </svg>
       );
@@ -103,6 +97,17 @@ function SocialIcon({ name }: { name: string }) {
 }
 
 export default function Footer() {
+  // 🔗 Right-column policy links: fill in real URLs later
+  const policyLinks = [
+    { label: "TERMS OF SERVICE", href: "" },
+    { label: "PRIVACY POLICY", href: "" },
+    { label: "COOKIE POLICY", href: "" },
+    { label: "NOTICE AT COLLECTION", href: "" },
+    { label: "OUR LOCATIONS", href: "" },
+    { label: "OUR BLOG", href: "/blogs" },
+    { label: "CREATOR PROGRAM", href: "" },
+  ];
+
   return (
     <footer
       className=" font-quicksand
@@ -201,21 +206,13 @@ export default function Footer() {
           className="justify-self-start md:justify-self-center 3xl:pt-20"
         >
           <ul className="space-y-3 md:space-y-4 text-white/95">
-            {[
-              "TERMS OF SERVICE",
-              "PRIVACY POLICY",
-              "COOKIE POLICY",
-              "NOTICE AT COLLECTION",
-              "OUR LOCATIONS",
-              "OUR BLOG",
-              "CREATOR PROGRAM",
-            ].map((t) => (
-              <li key={t}>
+            {policyLinks.map((item) => (
+              <li key={item.label}>
                 <Link
-                  href="#"
+                  href={item.href || "#"}
                   className="hover:opacity-90 text-sm md:text-[15px]"
                 >
-                  {t}
+                  {item.label}
                 </Link>
               </li>
             ))}
