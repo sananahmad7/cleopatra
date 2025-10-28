@@ -5,18 +5,18 @@ export default function Hero() {
     <div className="w-full h-[611px] 3xl:h-[670px] flex items-center mt-10 md:mt-0  bg-[#FFFFFF] p-4 ">
       <div className=" w-full  md:max-w-[900px] 2xl:max-w-[975px] mx-auto  h-auto  flex flex-col md:flex-row items-stretch md:gap-8 gap-8 bg-white rounded-lg overflow-hidden ">
         {/* Left side - Image */}
-        <div className="w-full sm:h-[400px] md:w-[414px] h-[300px] md:h-[331px] relative shrink-0">
+        <div className="w-full sm:h-[359px]  md:w-[344px] h-[300px] md:h-[331px] relative shrink-0">
           <Image
             src="/cleaninglady.webp"
             alt="logo"
             fill
-            className="object-cover rounded-lg"
+            className="object-cover md:object-cover rounded-lg"
           />
         </div>
 
         {/* Right side - Content */}
-        <div className=" w-full   flex flex-col justify-center border  md:items-start px-6 md:px-4 md:pr-6 py-8 md:py-0">
-          <h2 className="w-full  md:max-w-[400px] lg:max-w-[490px] xl:max-w-[490px] border  md:h-[72px] font-torus font-black text-[23px] md:text-[25px] lg:text-[29px] 3xl:text-[35px] leading-9 md:leading-9 text-center  text-[#4B4B4B] mb-8 md:mb-6">
+        <div className=" w-full   flex flex-col justify-center   md:items-start px-6 md:px-4 md:pr-6 py-8 md:py-0">
+          <h2 className="w-full  md:max-w-[400px] lg:max-w-[490px] xl:max-w-[490px]   md:h-[72px] font-torus font-semibold lg:font-black text-[23px] sm:text-[25px] md:text-[25px] lg:text-[29px] 2xl:text-[35px] leading-9 md:leading-9 text-center  text-[#4B4B4B] mb-8 md:mb-6">
             The easiest, most trusted way to book your next cleaning.
           </h2>
 
