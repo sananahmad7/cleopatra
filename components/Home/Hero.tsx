@@ -15,8 +15,8 @@ export default function Hero() {
         </div>
 
         {/* Right side - Content */}
-        <div className=" w-full   flex flex-col justify-center   md:items-start px-6 md:px-4 md:pr-6 py-8 md:py-0">
-          <h2 className="w-full  md:max-w-[400px] lg:max-w-[490px] xl:max-w-[490px]   md:h-[72px] font-torus font-semibold lg:font-black text-[23px] sm:text-[25px] md:text-[25px] lg:text-[29px] 2xl:text-[35px] leading-9 md:leading-9 text-center  text-[#4B4B4B] mb-8 md:mb-6">
+        <div className=" w-full   flex flex-col justify-center   md:items-center px-6 md:px-4 md:pr-6 py-8 md:py-0">
+          <h2 className="w-full  md:max-w-[400px] lg:max-w-[490px] xl:max-w-[490px]   md:h-[72px] font-torus font-semibold 2xl:font-bold  text-[23px] sm:text-[25px] md:text-[25px] lg:text-[29px] 2xl:text-[35px] leading-9 md:leading-9 text-center  text-[#4B4B4B] mb-8 md:mb-6">
             The easiest, most trusted way to book your next cleaning.
           </h2>
 
@@ -46,8 +46,8 @@ export default function Hero() {
               </svg>
 
               <div className="leading-tight">
-                <div className="text-[14px] font-bold">Download on the</div>
-                <div className="text-[16px] font-semibold">App Store</div>
+                <div className="text-[14px] font-medium">Download on the</div>
+                <div className="text-[16px] font-medium">App Store</div>
               </div>
             </a>
 
@@ -76,7 +76,7 @@ export default function Hero() {
 
               <div className="leading-tight">
                 <div className="text-[14px] font-medium">Get it on</div>
-                <div className="text-[16px] font-semibold">Google Play</div>
+                <div className="text-[16px] font-medium">Google Play</div>
               </div>
             </a>
           </div>
