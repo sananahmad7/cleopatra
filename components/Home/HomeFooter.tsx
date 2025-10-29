@@ -34,10 +34,13 @@ export default function HomeFooter() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 py-10">
             {/* Apps */}
             <nav aria-labelledby="footer-apps">
-              <h3 id="footer-apps" className="text-white font-semibold mb-3">
+              <h3
+                id="footer-apps"
+                className="text-white  md:text-[20px] font-semibold mb-3"
+              >
                 Apps
               </h3>
-              <ul className="space-y-2 text-[#DBDBDB] text-sm">
+              <ul className="space-y-2 text-[#DBDBDB] text-sm md:text-[17px]">
                 <li>
                   <Link href="#" className="hover:opacity-90">
                     Cleopatra for Android
@@ -53,10 +56,13 @@ export default function HomeFooter() {
 
             {/* Help & Support */}
             <nav aria-labelledby="footer-help">
-              <h3 id="footer-help" className="text-white font-semibold mb-3">
+              <h3
+                id="footer-help"
+                className="text-white font-semibold md:text-[20px] mb-3"
+              >
                 Help &amp; Support
               </h3>
-              <ul className="space-y-2 text-[#DBDBDB] text-sm">
+              <ul className="space-y-2 text-[#DBDBDB] text-sm md:text-[17px]">
                 <li>
                   <Link href="#" className="hover:opacity-90">
                     Client Support
@@ -92,10 +98,13 @@ export default function HomeFooter() {
 
             {/* Privacy & Terms */}
             <nav aria-labelledby="footer-privacy">
-              <h3 id="footer-privacy" className="text-white font-semibold mb-3">
+              <h3
+                id="footer-privacy"
+                className="text-white md:text-[20px] font-semibold mb-3"
+              >
                 Privacy &amp; Terms
               </h3>
-              <ul className="space-y-2 text-[#DBDBDB] text-sm">
+              <ul className="space-y-2 text-[#DBDBDB] text-sm md:text-[17px]">
                 <li>
                   <Link href="#" className="hover:opacity-90">
                     Terms of Service
@@ -121,10 +130,13 @@ export default function HomeFooter() {
 
             {/* Socials */}
             <nav aria-labelledby="footer-socials">
-              <h3 id="footer-socials" className="text-white font-semibold mb-3">
+              <h3
+                id="footer-socials"
+                className="text-white md:text-[20px] font-semibold mb-3"
+              >
                 Socials
               </h3>
-              <ul className="space-y-2 text-[#DBDBDB] text-sm">
+              <ul className="space-y-2 text-[#DBDBDB] text-sm md:text-[17px]">
                 <li>
                   <Link href="#" className="hover:opacity-90">
                     Instagram
