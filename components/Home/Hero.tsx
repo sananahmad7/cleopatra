@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="w-full h-[611px] 3xl:h-[670px] flex items-center mt-10 md:mt-0  bg-[#FFFFFF] p-4 ">
-      <div className=" w-full  md:max-w-[900px] 2xl:max-w-[975px] mx-auto  h-auto  flex flex-col md:flex-row items-stretch md:gap-5 gap-8 bg-white rounded-lg overflow-hidden ">
+    <div className="w-full  h-[611px] 3xl:h-[670px] flex items-center mt-10 md:mt-0  bg-[#FFFFFF] p-4 ">
+      <div className=" w-full  md:max-w-[990px] 2xl:max-w-[995px] mx-auto  h-auto  flex flex-col md:flex-row items-stretch md:gap-5 gap-8 bg-white rounded-lg overflow-hidden ">
         {/* Left side - Image */}
         <div className="w-full h-[300px] sm:h-[359px]  md:w-[350px] lg:w-[414px]  md:h-[331px] relative shrink-0">
           <Image
@@ -17,12 +17,12 @@ export default function Hero() {
         {/* Right side - Content */}
         <div className=" w-full  flex flex-col justify-center   md:items-center  px-6 md:px-4 md:pr-6 py-8 md:py-0">
           <div>
-            <h2 className=" w-full  md:max-w-[355px] lg:max-w-[490px] xl:max-w-[500px] 2xl:max-w-[520px] md:text-left lg:text-center md:h-[72px] font-poppins  font-semibold 2xl:font-bold 3xl:font-black text-[23px] sm:text-[25px] md:text-[25px] lg:text-[29px] 2xl:text-[32px] leading-6 md:leading-9 text-center  text-[#4B4B4B] mb-8 md:mb-6">
+            <h2 className=" w-full  md:max-w-[355px] border lg:max-w-[530px] xl:max-w-[500px]  2xl:max-w-[520px] md:text-center lg:text-center md:h-[72px] font-poppins  font-semibold 2xl:font-bold 3xl:font-black text-[23px] sm:text-[25px] md:text-[25px] lg:text-[29px] 2xl:text-[32px] leading-6 md:leading-9 text-center  text-[#4B4B4B] mb-8 md:mb-6">
               The easiest, most trusted way to book your next cleaning.
             </h2>
 
             {/* App Store / Google Play badges */}
-            <div className="flex flex-col  justify-center items-center sm:flex-row gap-2 lg:gap-4 w-full md:mt-12 lg:mt-8 mx-auto ">
+            <div className="flex flex-col  justify-center items-center sm:flex-row gap-2 lg:gap-4 w-full md:mt-14 lg:mt-8 mx-auto ">
               {/* App Store */}
               <a
                 href="#"
