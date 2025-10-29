@@ -38,7 +38,7 @@ const Pricing = () => {
           text-[34px] leading-10
           sm:text-[42px] sm:leading-12
           md:text-[48px] md:leading-[54px]
-          3xl:text-[52px] 3xl:leading-[58px]
+          3xl:text-[62px] 3xl:leading-[58px]
           tracking-[0.01em] pt-4
         "
       >

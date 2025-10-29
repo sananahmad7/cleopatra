@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Quicksand } from "next/font/google";
+import { Geist, Geist_Mono, Quicksand, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import localFont from "next/font/local";
@@ -12,6 +12,13 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["400", "500", "600", "700"], // include the weights you will use
 });
 
 const quicksand = Quicksand({
@@ -64,7 +71,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         cz-shortcut-listen="true"
-        className={`${geistSans.variable} ${geistMono.variable} ${quicksand.variable} ${torusPro.variable} antialiased`}
+        className={`${geistSans.variable} ${poppins.variable} ${geistMono.variable} ${quicksand.variable} ${torusPro.variable} antialiased`}
       >
         <div className="">
           <Navbar />

@@ -36,7 +36,7 @@ export default function HomeFooter() {
             <nav aria-labelledby="footer-apps">
               <h3
                 id="footer-apps"
-                className="text-white  md:text-[20px] font-semibold mb-3"
+                className="text-white  lg:text-[20px] font-semibold mb-3"
               >
                 Apps
               </h3>
@@ -58,7 +58,7 @@ export default function HomeFooter() {
             <nav aria-labelledby="footer-help">
               <h3
                 id="footer-help"
-                className="text-white font-semibold md:text-[20px] mb-3"
+                className="text-white font-semibold lg:text-[20px] mb-3"
               >
                 Help &amp; Support
               </h3>
@@ -100,7 +100,7 @@ export default function HomeFooter() {
             <nav aria-labelledby="footer-privacy">
               <h3
                 id="footer-privacy"
-                className="text-white md:text-[20px] font-semibold mb-3"
+                className="text-white lg:text-[20px] font-semibold mb-3"
               >
                 Privacy &amp; Terms
               </h3>
@@ -132,7 +132,7 @@ export default function HomeFooter() {
             <nav aria-labelledby="footer-socials">
               <h3
                 id="footer-socials"
-                className="text-white md:text-[20px] font-semibold mb-3"
+                className="text-white lg:text-[20px] font-semibold mb-3"
               >
                 Socials
               </h3>

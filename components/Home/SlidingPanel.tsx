@@ -110,11 +110,11 @@ export default function SlidingPanel({
           {row.map((item, idx) => (
             <li
               key={idx}
-              className="flex shrink-0 items-center gap-3 text-base md:text-[17px] font-semibold tracking-wide text-slate-700"
+              className="flex shrink-0 items-center gap-3 text-base md:text-[15px] font-semibold tracking-wide text-slate-700"
             >
               {/* color class left intact; will not affect images */}
               <span className="text-pink-500">{item.icon}</span>
-              <span className="whitespace-nowrap text-[#777777]">
+              <span className="whitespace-nowrap text-[#777777] font-poppins font-semibold">
                 {item.label}
               </span>
             </li>
