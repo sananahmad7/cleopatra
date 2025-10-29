@@ -17,51 +17,52 @@ const Benefits = () => {
         {/* Left: Copy block (479 × 522 at 3xl) */}
         <div
           className="
-      order-2 md:order-1
-      w-full
-      md:max-w-[560px] 2xl:max-w-[520px]
-      3xl:w-[479px] 3xl:h-[522px]
-      flex flex-col justify-center
-      items-center md:items-start
-      gap-4 md:gap-5 3xl:gap-[22px]
-    "
+    order-2 md:order-1
+    w-full
+    md:max-w-[560px] 2xl:max-w-[520px]
+    3xl:w-[479px] 3xl:h-[522px]
+    flex flex-col justify-center
+    items-center md:items-start
+    gap-4 md:gap-5 3xl:gap-[22px]
+  "
         >
           {/* Title (keep 3xl sizing) */}
           <h1
             className="
-        font-torus font-bold tracking-[0.01em] text-[#FD037E]
-        text-center md:text-left
-        text-[32px] leading-[38px]            /* xs default */
-        md:text-[44px] md:leading-[50px]
-        2xl:text-[50px] 2xl:leading-14
-        3xl:text-[52px] 3xl:leading-[58px]
-      "
+      font-torus font-bold tracking-[0.01em] text-[#FD037E]
+      text-center md:text-left
+      text-[32px] leading-[38px]            /* xs default */
+      md:text-[44px] md:leading-[50px]
+      2xl:text-[50px] 2xl:leading-14
+      3xl:text-[52px] 3xl:leading-[58px]
+    "
           >
             <span className="block">Clean. Simple.</span>
             <span className="block">Stress Free.</span>
           </h1>
 
           {/* Description */}
-          <div className="space-y-3 md:space-y-4 text-[#777777]  md:text-left ">
+          <div className="space-y-3 max-w-140 md:max-w-full md:space-y-4 text-[#777777] text-center md:text-left">
             <p
               className="
-          font-quicksand font-semibold 
-          text-[16px] leading-[22px]
-          md:text-[17px] md:leading-6
-          2xl:text-[18px] 2xl:leading-6
-        "
+        font-quicksand font-semibold 
+        text-[16px] leading-[22px]
+        md:text-[17px] md:leading-6
+        2xl:text-[18px] 2xl:leading-6
+      "
             >
               Cleopatra makes it easy to book a cleaner you can trust. No back
               and forth, no hidden fees. Just fast, reliable service with a few
               taps and total peace of mind.
             </p>
+
             <p
               className="
-          font-quicksand font-semibold 
-          text-[16px] leading-[22px]
-          md:text-[17px] md:leading-6
-          2xl:text-[18px] 2xl:leading-6
-        "
+        font-quicksand font-semibold 
+        text-[16px] leading-[22px]
+        md:text-[17px] md:leading-6
+        2xl:text-[18px] 2xl:leading-6
+      "
             >
               We built Cleopatra for people who value their time and don’t want
               to chase quotes or wonder if someone will actually show up. With a
@@ -72,17 +73,18 @@ const Benefits = () => {
 
             {/* How Booking Works */}
             <div
-              className=" 
-          font-quicksand font-semibold 
-          text-[16px] leading-[22px]
-          md:text-[17px] md:leading-6
-         
-          2xl:text-[18px] 2xl:leading-6  text-left 
-        "
+              className="
+        font-quicksand font-semibold 
+        text-[16px] leading-[22px]
+        md:text-[17px] md:leading-6
+        2xl:text-[18px] 2xl:leading-6
+        text-center md:text-left
+      "
             >
               <p className="mb-1">How Booking Works:</p>
 
-              <ol className="list-decimal pl-5 md:pl-6 space-y-1">
+              {/* Centered on small screens, indented on md+ */}
+              <ol className="list-decimal list-inside pl-0  space-y-1 inline-block mx-auto text-left md:mx-0">
                 <li>Tell us about your space and cleaning needs</li>
                 <li>We’ll match you with a top-rated cleaner nearby</li>
                 <li>Pay securely and relax</li>
