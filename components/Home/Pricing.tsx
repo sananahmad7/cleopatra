@@ -116,7 +116,7 @@ const Pricing = () => {
               key={service + i}
               className="
                 grid grid-cols-4 gap-2 items-center
-                px-3
+                
                 h-[60px]               /* comfortable tap target */
                 border-t border-[#E7EDF3]
                 text-[#777777] text-sm
