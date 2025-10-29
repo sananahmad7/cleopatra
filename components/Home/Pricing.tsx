@@ -27,7 +27,7 @@ const Pricing = () => {
       className="
         max-w-[988px] mx-auto 
         h-auto 3xl:h-[1060px]
-        mt-85  md:mt-9 lg:mt-18 2xl:mt-30
+        xxs:mt-125 xs:mt-85  md:mt-9 lg:mt-18 2xl:mt-30
         px-4 sm:px-6 md:px-0
       "
     >

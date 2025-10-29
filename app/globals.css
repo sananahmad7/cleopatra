@@ -11,7 +11,7 @@
 
   --font-sans: var(--font-poppins);
   --font-mono: var(--font-geist-mono);
-
+  --breakpoint-xxs: 310px;    /* Extra extra small devices (iPhone 5 and below) */
   --breakpoint-xs: 374px;    /* Extra small devices (iPhone SE and below) */
   --breakpoint-sm: 640px;    /* Small devices (phones in landscape) */
   --breakpoint-md: 768px;    /* Medium devices (tablets) */
