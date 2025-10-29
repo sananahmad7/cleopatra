@@ -17,7 +17,7 @@ export default function Hero() {
         {/* Right side - Content */}
         <div className=" w-full  flex flex-col justify-center   md:items-center  px-6 md:px-4 md:pr-6 py-8 md:py-0">
           <div>
-            <h2 className=" w-full  md:max-w-[355px] border lg:max-w-[530px] xl:max-w-[500px]  2xl:max-w-[520px] md:text-center lg:text-center md:h-[72px] font-poppins  font-semibold 2xl:font-bold 3xl:font-black text-[23px] sm:text-[25px] md:text-[25px] lg:text-[29px] 2xl:text-[32px] leading-6 md:leading-9 text-center  text-[#4B4B4B] mb-8 md:mb-6">
+            <h2 className=" w-full  md:max-w-[355px] lg:max-w-[530px] xl:max-w-[500px]  2xl:max-w-[520px] md:text-center lg:text-center md:h-[72px] font-poppins  font-semibold 2xl:font-bold 3xl:font-black text-[23px] sm:text-[25px] md:text-[25px] lg:text-[29px] 2xl:text-[32px] leading-6 md:leading-9 text-center  text-[#4B4B4B] mb-8 md:mb-6">
               The easiest, most trusted way to book your next cleaning.
             </h2>
 
